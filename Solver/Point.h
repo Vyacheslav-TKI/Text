@@ -1,4 +1,5 @@
 #pragma once
+#include <ostream>
 namespace rut::miit::text
 {
 	/**
@@ -20,6 +21,7 @@ namespace rut::miit::text
 
 	};
 
-	bool operator==(const Point& point1, const Point& point2);
-	bool operator!=(const Point& point1, const Point& point2);
+	bool operator==(const Point& left_point, const Point& right_point);
+	bool operator!=(const Point& left_point, const Point& right_point);
+	std::ostream& operator << (std::ostream& os, const Point& point);
 }

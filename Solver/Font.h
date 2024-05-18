@@ -9,7 +9,7 @@ namespace rut::miit::text
 	public:
 		Font();
 
-		Font(std::string name, const Color& color1, int size);
+		Font(std::string name, const Color& color, int size);
 
 		friend std::ostream& operator << (std::ostream& os, const Font& fnt);
 	private:

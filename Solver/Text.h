@@ -1,18 +1,22 @@
 #pragma once
 #include "Font.h"
+#include "Point.h"
 namespace rut::miit::text
 {
 	class Text
 	{
 	public:
-		Text(std::string data, const Font& font1);
+		Text(Point pos, std::string data, const Font font);
 
-		static void read_data();
+		static Text read_data(Point pos, std::string data, std::string font_name, Color color, int size);
 
 		friend std::ostream& operator << (std::ostream& os, const Text& txt);
-
-		std::string to_string();
 	private:
+		/**
+		* @brief Позиция текста в "пространстве"
+		*/
+		Point position;
+
 		/**
 		* @brief Непосредственно текст
 		*/

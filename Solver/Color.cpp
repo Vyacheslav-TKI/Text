@@ -10,6 +10,7 @@ namespace rut::miit::text
 	}
 	Color::Color(int r, int g, int b)
 	{
+		setlocale(LC_ALL, "Russian");
 		if (r * g * b < 0)
 		{
 			throw std::logic_error("Величины цвета должны быть неотрицательными!");
@@ -19,13 +20,13 @@ namespace rut::miit::text
 			throw std::logic_error("Величины цвета должны быть строго меньше 256!");
 		}
 
-		this->red = static_cast<uint8_t>(r);
-		this->green = static_cast<uint8_t>(g);
-		this->blue = static_cast<uint8_t>(b);
+		red = static_cast<uint8_t>(r);
+		green = static_cast<uint8_t>(g);
+		blue = static_cast<uint8_t>(b);
 	}
 	std::ostream& operator << (std::ostream& os, const Color& clr)
 	{
-		os << clr.red << ":" << clr.green << ":" << clr.blue;
+		os << static_cast<int>(clr.red) << ":" << static_cast<int>(clr.green) << ":" << static_cast<int>(clr.blue);
 		return os;
 	}
 }
