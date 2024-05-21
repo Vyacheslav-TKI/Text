@@ -1,4 +1,4 @@
-#include "Text.h"
+ï»¿#include "Text.h"
 #include "Font.h"
 #include "Color.h"
 namespace rut::miit::text
@@ -13,7 +13,7 @@ namespace rut::miit::text
 
 	std::ostream& operator << (std::ostream& os, const Text& txt)
 	{
-		os << "Ïîçèöèÿ: " << txt.position << "/n" << "Òåêñò: " << txt.text_data << "/n" << "Øðèôò: " << txt.text_font;
+		os << "ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ñ: " << txt.position << "/n" << "Ð¢ÐµÐºÑÑ‚: " << txt.text_data << "/n" << "Ð¨Ñ€Ð¸Ñ„Ñ‚: " << txt.text_font;
 		return os;
 	}
 }

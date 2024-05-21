@@ -1,10 +1,10 @@
-#pragma once
+п»ї#pragma once
 #include <stdint.h>
 #include <ostream>
 namespace rut::miit::text
 {
 	/**
-	* @brief Класс Цвет
+	* @brief В Р»Р°СЃСЃ Г·РІРµС‚
 	*/
 	class Color
 	{
@@ -16,17 +16,17 @@ namespace rut::miit::text
 		friend std::ostream& operator << (std::ostream& os, const Color& clr);
 	private:
 		/**
-		* @brief Красный цвет
+		* @brief В СЂР°СЃРЅС‹Р№ С†РІРµС‚
 		*/
 		uint8_t red;
 
 		/**
-		* @brief Синий цвет
+		* @brief вЂ”РёРЅРёР№ С†РІРµС‚
 		*/
 		uint8_t blue;
 
 		/**
-		* @brief Зеленый цвет
+		* @brief В«РµР»РµРЅС‹Р№ С†РІРµС‚
 		*/
 		uint8_t green;
 	};

@@ -1,4 +1,4 @@
-#include "Point.h"
+﻿#include "Point.h"
 #include <cmath>
 #include <limits>
 using namespace rut::miit::text;

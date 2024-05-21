@@ -1,19 +1,19 @@
-#pragma once
+п»ї#pragma once
 #include <ostream>
 namespace rut::miit::text
 {
 	/**
-	* @brief Класс Точка.
+	* @brief РљР»Р°СЃСЃ РўРѕС‡РєР°.
 	*/
 	struct Point
 	{
 		/**
-		* @brief Абсцисса.
+		* @brief РђР±СЃС†РёСЃСЃР°.
 		*/
 		double x;
 
 		/**
-		* @brief Ордината.
+		* @brief РћСЂРґРёРЅР°С‚Р°.
 		*/
 		double y;
 

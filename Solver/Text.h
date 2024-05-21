@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include "Font.h"
 #include "Point.h"
 namespace rut::miit::text
@@ -13,17 +13,17 @@ namespace rut::miit::text
 		friend std::ostream& operator << (std::ostream& os, const Text& txt);
 	private:
 		/**
-		* @brief Ïîçèöèÿ òåêñòà â "ïðîñòðàíñòâå"
+		* @brief ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ñ Ñ‚ÐµÐºÑÑ‚Ð° Ð² "Ð¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÑÑ‚Ð²Ðµ"
 		*/
 		Point position;
 
 		/**
-		* @brief Íåïîñðåäñòâåííî òåêñò
+		* @brief ÐÐµÐ¿Ð¾ÑÑ€ÐµÐ´ÑÑ‚Ð²ÐµÐ½Ð½Ð¾ Ñ‚ÐµÐºÑÑ‚
 		*/
 		std::string text_data;
 
 		/**
-		* @brief Øðèôò òåêñòà
+		* @brief Ð¨Ñ€Ð¸Ñ„Ñ‚ Ñ‚ÐµÐºÑÑ‚Ð°
 		*/
 		Font text_font;
 	};

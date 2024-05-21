@@ -1,4 +1,4 @@
-#include "Color.h"
+п»ї#include "Color.h"
 #include <stdint.h>
 #include <ostream>
 
@@ -13,11 +13,11 @@ namespace rut::miit::text
 		setlocale(LC_ALL, "Russian");
 		if (r * g * b < 0)
 		{
-			throw std::logic_error("Величины цвета должны быть неотрицательными!");
+			throw std::logic_error("Р’РµР»РёС‡РёРЅС‹ С†РІРµС‚Р° РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹РјРё!");
 		}
 		else if (r > 255 || g > 255 || b > 255)
 		{
-			throw std::logic_error("Величины цвета должны быть строго меньше 256!");
+			throw std::logic_error("Р’РµР»РёС‡РёРЅС‹ С†РІРµС‚Р° РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ СЃС‚СЂРѕРіРѕ РјРµРЅСЊС€Рµ 256!");
 		}
 
 		red = static_cast<uint8_t>(r);

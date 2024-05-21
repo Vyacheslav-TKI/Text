@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include <string>
 #include "Color.h"
 
@@ -14,17 +14,17 @@ namespace rut::miit::text
 		friend std::ostream& operator << (std::ostream& os, const Font& fnt);
 	private:
 		/**
-		* @brief Íàçâàíèå øðèôòà
+		* @brief ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑˆÑ€Ð¸Ñ„Ñ‚Ð°
 		*/
 		std::string font_name;
 
 		/**
-		* @brief Öâåò øðèôòà
+		* @brief Ð¦Ð²ÐµÑ‚ ÑˆÑ€Ð¸Ñ„Ñ‚Ð°
 		*/
 		Color font_color;
 
 		/**
-		* @brief Ðàçìåð øðèôòà
+		* @brief Ð Ð°Ð·Ð¼ÐµÑ€ ÑˆÑ€Ð¸Ñ„Ñ‚Ð°
 		*/
 		size_t font_size;
 	};

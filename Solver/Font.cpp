@@ -1,4 +1,4 @@
-#include "Font.h"
+ï»¿#include "Font.h"
 #include "Color.h"
 #include <string>
 
@@ -15,7 +15,7 @@ namespace rut::miit::text
 	{
 		if (size <= 0)
 		{
-			throw std::logic_error("Ðàçìåð øðèôòà äîëæåí áûòü íåîòðèöàòåëüíûì!");
+			throw std::logic_error("Ð Ð°Ð·Ð¼ÐµÑ€ ÑˆÑ€Ð¸Ñ„Ñ‚Ð° Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð±Ñ‹Ñ‚ÑŒ Ð½ÐµÐ¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼!");
 		}
 
 		font_name = name;
