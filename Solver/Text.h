@@ -8,7 +8,7 @@ namespace rut::miit::text
 	public:
 		Text(Point pos, std::string data, const Font font);
 
-		static Text read_data(Point pos, std::string data, std::string font_name, Color color, int size);
+		static void read_data();
 
 		friend std::ostream& operator << (std::ostream& os, const Text& txt);
 	private:
